@@ -35,7 +35,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 ```
 
-## 📥 Load Data
+## 📥 Data
 
 ```df = pd.read_csv(r'C:\Users\dshaw\Springboard\Capstone Three Credit Card Customer Prediction/Data/BankChurners.csv')```
 
@@ -76,20 +76,22 @@ Attrited Customers: 16.07%
 
 ### 👥 Churn by Gender
 More female customers churn, though overall more females are in the dataset.
-
+![Frequency of Attrition Flag for Each Gender](catplot1.png)
 ### 💍 Marital Status vs Dependent Count
 Married customers have the highest dependent count frequencies.
 
 ### 🎓 Education Level vs Churn
 Most churned customers are Graduates, aligning with the fact that most customers are graduates.
+![Frequency of Attrition Flag for Each Education_Level](catplot2.png)
 
 ### 💰 Income Category Insights
 Majority of customers earn less than $40K
-
+![Frequency of Each Income Category for each Education Level](catplot3.png)
 These customers are also the largest churn segment.
 
 ### 💳 Card Category Distribution
 Blue Card is the most common, which correlates with lower income segments.
+![Card Category Distribution](piechart.png)
 
 ## 📈 Distribution of Numerical Features
 Numerical columns such as Credit_Limit, Total_Revolving_Bal, Avg_Open_To_Buy, Total_Amt_Chng_Q4_Q1, etc., were plotted to understand their distributions.
@@ -177,3 +179,5 @@ Among the models tested, the Support Vector Machine (SVC) model with an RBF kern
 Naive Bayes trailed behind in overall accuracy and AUC, making it the least favorable option.
 
 Best Model: Support Vector Classifier (SVC)
+
+![Support Vector Classifier (SVC)](evaluation.png)
